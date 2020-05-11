@@ -48,8 +48,6 @@ begin
     if (clk'event and clk = '1') then
       if (reset = '1') then
         state <= st1_dig1;
-        mux <="00";
-        enable <= "001";
       else
         state <= next_state;
 
