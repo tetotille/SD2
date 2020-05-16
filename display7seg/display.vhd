@@ -107,6 +107,7 @@ begin
     reset         => reset
   );
 
+
     multiplexor : mux_dec PORT MAP (
     dig1  => BCDdig1,
     dig2  => BCDdig2,
