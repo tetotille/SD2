@@ -1,7 +1,7 @@
 #Autores: Jorge Tillería y Alejandro Maciel
 
 .data
-	cadena1 : .asciiz "hola"
+	cadena1 : .asciiz "hola hhola"
 	cadena2 : .asciiz "ha"
 .text
 		
