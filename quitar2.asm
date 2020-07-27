@@ -60,9 +60,8 @@ quitar:
 cambiar:  
 	addi $t2, $t0, 0 #nuevos contadores
 	while2:
-		la $t3, cadena1($t2)
 		lb $t4, cadena1+1($t2)
-		sb $t4, ($t3)
+		sb $t4, cadena1($t2)
 		addi $t2, $t2, 1
 		bnez $t4, while2
 		
