@@ -1,5 +1,5 @@
 .data
-    vector: .ascii "e" "\0" "\0" "\0" "m" "\0" "\0" "\0" "p"  "\0" "\0" "\0" "a" "\0" "\0" "\0" "n" "\0" "\0" "\0" "a" "\0" "\0" "\0"
+    vector: .ascii 9 9 1 9 9 1
     length: .word 6
     space: .asciiz "  "
     message1: .asciiz "Vector ingresado:\n"
@@ -33,8 +33,8 @@ imprimir:
         beq $t0, $s0, whilePrintEnd # si i=length
     
         sll $t1, $t0, 2
-        la $a0, vector($t1)
-        li $v0, 4
+        lw $a0, vector($t1)
+        li $v0, 1
         syscall # se imprime vector[i]
         
         la $a0, space
